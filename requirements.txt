@@ -1,0 +1,8 @@
+streamlit
+streamlit-tags
+yfinance
+quantstats
+pandas
+numpy
+matplotlib
+ipython
