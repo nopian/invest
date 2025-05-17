@@ -71,7 +71,7 @@ with st.sidebar:
     api_start_date_input = st.date_input("Start Date", value=default_start_date, max_value=date.today() - timedelta(days=1))
     api_end_date_input = st.date_input("End Date", value=date.today(), min_value=api_start_date_input + timedelta(days=1), max_value=date.today())
     api_start_val_input = st.number_input("Starting Value ($)", 100, 1_000_000_000, 10000, 100)
-    api_rebalance_freq_input = st.selectbox("Rebalance Frequency", ["Monthly", "Quarterly", "Yearly", "Never"], index=2)
+    api_rebalance_freq_input = st.selectbox("Rebalance Frequency", ["Monthly", "Quarterly", "Yearly", "Never"], index=1)
 
     run_button = st.button("🚀 Run Calculations & Backtest", use_container_width=True, type="primary")
 
